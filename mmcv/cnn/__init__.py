@@ -10,7 +10,8 @@ from .bricks import (ACTIVATION_LAYERS, CONV_LAYERS, NORM_LAYERS,
                      NonLocal1d, NonLocal2d, NonLocal3d, Scale, Swish,
                      build_activation_layer, build_conv_layer,
                      build_norm_layer, build_padding_layer, build_plugin_layer,
-                     build_upsample_layer, conv_ws_2d, is_norm)
+                     build_upsample_layer, build_seq_layer, build_pred_layer, 
+                     build_tps_layer, conv_ws_2d, is_norm)
 # yapf: enable
 from .resnet import ResNet, make_res_layer
 from .utils import (bias_init_with_prob, caffe2_xavier_init, constant_init,
@@ -23,7 +24,8 @@ __all__ = [
     'constant_init', 'xavier_init', 'normal_init', 'uniform_init',
     'kaiming_init', 'caffe2_xavier_init', 'bias_init_with_prob', 'ConvModule',
     'build_activation_layer', 'build_conv_layer', 'build_norm_layer',
-    'build_padding_layer', 'build_upsample_layer', 'build_plugin_layer',
+    'build_padding_layer', 'build_upsample_layer', 'build_plugin_layer', 
+    'build_seq_layer', 'build_pred_layer', 'build_tps_layer',
     'is_norm', 'NonLocal1d', 'NonLocal2d', 'NonLocal3d', 'ContextBlock',
     'HSigmoid', 'Swish', 'HSwish', 'GeneralizedAttention', 'ACTIVATION_LAYERS',
     'CONV_LAYERS', 'NORM_LAYERS', 'PADDING_LAYERS', 'UPSAMPLE_LAYERS',

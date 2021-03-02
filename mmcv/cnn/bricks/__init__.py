@@ -19,11 +19,15 @@ from .swish import Swish
 from .upsample import build_upsample_layer
 from .wrappers import (Conv2d, Conv3d, ConvTranspose2d, ConvTranspose3d,
                        Linear, MaxPool2d, MaxPool3d)
+from .sequence import build_seq_layer
+from .prediction import build_pred_layer
+from .transformation import build_tps_layer
 
 __all__ = [
     'ConvModule', 'build_activation_layer', 'build_conv_layer',
     'build_norm_layer', 'build_padding_layer', 'build_upsample_layer',
-    'build_plugin_layer', 'is_norm', 'HSigmoid', 'HSwish', 'NonLocal1d',
+    'build_plugin_layer', 'build_seq_layer', 'build_pred_layer', 
+    'build_tps_layer', 'is_norm', 'HSigmoid', 'HSwish', 'NonLocal1d',
     'NonLocal2d', 'NonLocal3d', 'ContextBlock', 'GeneralizedAttention',
     'ACTIVATION_LAYERS', 'CONV_LAYERS', 'NORM_LAYERS', 'PADDING_LAYERS',
     'UPSAMPLE_LAYERS', 'PLUGIN_LAYERS', 'Scale', 'ConvAWS2d', 'ConvWS2d',
